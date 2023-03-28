@@ -8,6 +8,6 @@ app.use("/healthcheck", require("./routes/healthchecker"));
 
 app.use("/mails", mailRouter);
 
-app.listen(80, () => {
+app.listen(8080, () => {
   console.log("Server online");
 });
