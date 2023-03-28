@@ -4,6 +4,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use("/healthcheck", require("./routes/healthchecker"));
+
 app.use("/mails", mailRouter);
 
 app.listen(80, () => {
