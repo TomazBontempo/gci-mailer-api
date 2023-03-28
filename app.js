@@ -6,6 +6,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/mails", mailRouter);
 
-app.listen(443, () => {
+app.listen(80, () => {
   console.log("Server online");
 });
