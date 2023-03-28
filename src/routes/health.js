@@ -1,6 +1,6 @@
 const express = require("express");
 const hcrouter = express.Router({});
-router.get("/", async (_req, res, _next) => {
+hcrouter.get("/", async (_req, res, _next) => {
   const healthcheck = {
     uptime: process.uptime(),
     message: "OK",

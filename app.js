@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/healthcheck", require("./routes/healthchecker"));
+app.use("/health", require("./routes/health"));
 
 app.use("/mails", mailRouter);
 
